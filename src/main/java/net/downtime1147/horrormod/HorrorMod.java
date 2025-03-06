@@ -1,10 +1,10 @@
 package net.downtime1147.horrormod;
 
 import com.mojang.logging.LogUtils;
+import net.downtime1147.horrormod.block.ModBlocks;
 import net.downtime1147.horrormod.item.ModCreativeModTabs;
 import net.downtime1147.horrormod.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,6 +35,7 @@ public class HorrorMod{
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);

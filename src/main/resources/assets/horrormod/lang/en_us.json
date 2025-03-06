@@ -1,4 +1,7 @@
 {
   "creativetab.horrormod_tab": "Horror Mod",
-  "item.horrormod.drill_bit": "Drill Bit"
+
+  "item.horrormod.drill_bit": "Drill Bit",
+
+  "block.horrormod.flesh_block": "Flesh"
 }

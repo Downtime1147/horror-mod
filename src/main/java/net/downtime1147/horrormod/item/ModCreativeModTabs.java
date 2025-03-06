@@ -1,6 +1,7 @@
 package net.downtime1147.horrormod.item;
 
 import net.downtime1147.horrormod.HorrorMod;
+import net.downtime1147.horrormod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -17,7 +18,11 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DRILL_BIT.get()))
                     .title(Component.translatable("creativetab.horrormod_tab"))
                     .displayItems(((itemDisplayParameters, output) -> {
+
+                        // Add items to creative mode tab here
                         output.accept(ModItems.DRILL_BIT.get());
+                        output.accept(ModBlocks.FLESH_BLOCK.get());
+
                     }))
                     .build());
 
