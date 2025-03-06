@@ -49,7 +49,7 @@ public class LimbEntity extends Animal {
 
         if(retracting && this.retractAnimationTimeout >= 0){
             if(this.retractAnimationTimeout <= 0){
-                discard();
+                discard(); // Not actually despawning it, they just invisible
             } else {
                 --this.retractAnimationTimeout;
             }
